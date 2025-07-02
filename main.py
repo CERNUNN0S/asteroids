@@ -47,7 +47,7 @@ def main():
         for asteroid in asteroids:
             if not asteroid.collision(player):
                 print("Game over!")
-                exit(1)
+                exit(0)
         
             for bullet in bullets:
                 if not asteroid.collision(bullet):
